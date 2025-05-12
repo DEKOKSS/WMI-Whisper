@@ -74,9 +74,9 @@ This project is intended strictly for educational and authorized testing purpose
 Do not use it against systems you do not own or have explicit permission to test.
 
 
-- 'Based on [Impacket](https://github.com/fortra/impacket)'
+- Based on [Impacket](https://github.com/fortra/impacket)
 
-- 'Built by a cybersecurity researcher and student'
+- Built by a cybersecurity researcher and student
 
 
 
