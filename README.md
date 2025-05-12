@@ -69,6 +69,14 @@ python3 stealth_c2.py <TARGET> <USERNAME> <PASSWORD> --domain <DOMAIN> --lhost <
 ## 📸 DEMO
 ![GhostWMIC Demo](extra/whisper.gif)
 
+## ✅ Legal & Ethics
+This project is intended strictly for educational and authorized testing purposes.
+Do not use it against systems you do not own or have explicit permission to test.
+
+
+- 'Based on [Impacket](https://github.com/fortra/impacket)'
+
+- 'Built by a cybersecurity researcher and student'
 
 
 
