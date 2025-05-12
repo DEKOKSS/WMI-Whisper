@@ -42,7 +42,7 @@ pip install .
 ## 🚀 Usage
 
 ```bash
-python3 stealth_c2.py <TARGET> <USERNAME> <PASSWORD> --domain <DOMAIN> --lhost <YOUR_IP>
+python3 whisper.py <TARGET> <USERNAME> <PASSWORD> --domain <DOMAIN> --lhost <YOUR_IP>
 ```
 
 | Arg      | Description                         |
