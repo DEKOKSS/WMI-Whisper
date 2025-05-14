@@ -41,9 +41,62 @@ pip install .
 
 ## 🚀 Usage
 
+This section walks you through setting up the environment, installing dependencies, and running **WMIWhisper**.
+
+---
+### 🧱 Requirements 
+
+Before running the tool, make sure the following are in place:
+
+- 🐧 **Linux system** (tested on Kali Linux)
+- 🐍 **Python 3.8+**
+- 📡 Target Windows machine must:
+  - Be accessible over the network
+  - Allow WMI/DCOM traffic (port 135 + dynamic RPC)
+  - Allow outbound SMB (port 445) to your attacker machine
+  - Use credentials with **admin or WMI privileges**
+
+---
+
+### ⚙️ Environment Setup (First Time Only)
+
+I highly recommend using a **Python virtual environment** to keep your system clean:
+
 ```bash
-python3 whisper.py <TARGET> <USERNAME> <PASSWORD> --domain <DOMAIN> --lhost <YOUR_IP>
+# 1. Update your system
+sudo apt update
+
+# 2. Install Python, pip, and venv
+sudo apt install python3 python3-pip python3-venv -y
+
+# 3. Create and activate a virtual environment
+python3 -m venv ~/wmienv
+source ~/wmienv/bin/activate
+
 ```
+
+### 📦 Install Dependencies (Impacket)
+
+```bash
+# 4. Clone the Impacket repository
+git clone https://github.com/fortra/impacket.git
+
+# 5. Navigate into the Impacket directory
+cd impacket
+
+# 6. Install Impacket and all required packages
+pip install .
+```
+
+### 📂 Confirm impacket-smbserver is Available
+Check that the impacket-smbserver script was installed correctly:
+```bash 
+which impacket-smbserver
+```
+You should see a valid path (like `/usr/local/bin/impacket-smbserver`). If not, ensure you're inside the virtual environment and that installation completed successfully.
+
+
+
 
 | Arg      | Description                         |
 | -------- | ----------------------------------- |
