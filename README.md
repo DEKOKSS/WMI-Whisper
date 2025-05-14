@@ -93,7 +93,7 @@ python3 whisper.py <TARGET_IP> <USERNAME> <PASSWORD> --domain <DOMAIN_NAME> --lh
 ```
 | Arg      | Description                         |
 | -------- | ----------------------------------- |
-| TARGET   | Remote Windows IP                   |
+| TARGET_IP| Remote Windows IP                   |
 | USERNAME | Admin or WMI-capable user           |
 | PASSWORD | Account password                    |
 | --domain | Domain (leave blank for local user) |
