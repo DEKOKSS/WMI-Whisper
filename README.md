@@ -95,9 +95,24 @@ which impacket-smbserver
 ```
 You should see a valid path (like `/usr/local/bin/impacket-smbserver`). If not, ensure you're inside the virtual environment and that installation completed successfully.
 
+---
 
+### 📥 Clone This Repository
 
+Now that Impacket is installed, clone the WMIWhisper project:
 
+```bash
+# Go back to your workspace (outside impacket/)
+cd ~
+git clone https://github.com/DEKOKSS/WMI-Whisper
+cd WMI-Whisper
+```
+
+### ▶️ Running the Tool
+Inside the cloned project directory:
+```bash
+python3 whisper.py <TARGET_IP> <USERNAME> <PASSWORD> --domain <DOMAIN_NAME> --lhost <YOUR_KALI_IP>
+```
 | Arg      | Description                         |
 | -------- | ----------------------------------- |
 | TARGET   | Remote Windows IP                   |
@@ -106,6 +121,10 @@ You should see a valid path (like `/usr/local/bin/impacket-smbserver`). If not, 
 | --domain | Domain (leave blank for local user) |
 | --lhost  | Your IP for receiving output (SMB)  |
 
+### 📝 Example
+```bash
+python3 whisper.py 192.168.0.152 adminuser P@ssw0rd123 --domain pentestlab.local --lhost 192.168.0.186
+```
 ## 📂Output
 
 - Logs are saved in: `/tmp/dropzone/`
